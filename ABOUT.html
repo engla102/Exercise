@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KIKU BISTRO HOME</title>
+    <title>ABOUT KIKU BISTRO</title>
 
     <link rel="shortcut icon" href="favicon1.ico"/>
 
@@ -45,7 +45,7 @@
 
         aside {
             width: 120px;
-            height: 780px;
+            height: 800px;
             background-color: #97191c;
             float: left;
             margin-left: 50px;
@@ -100,6 +100,7 @@
             position: relative;
             float: right;
             margin-right: 25px;
+
         }
 
         #online {
@@ -162,60 +163,24 @@
             color: #97191c;
         }
 
-
-/*Start of specified page content*/
-
-        /*h2 {*/
-            /*font-family: Helvetica,bold,sans-serif;*/
-            /*font-size: 25px;*/
-            /*text-align: center;*/
-            /*margin: 30px;*/
-            /*margin-bottom: 10px;*/
-        /*}*/
+        /*Start of specified page content*/
 
         #para {
             margin-top: 30px;
             margin-right: 30px;
-            margin-left: 45px;
+            margin-left: 30px;
             /*text-align: center;*/
             font-size: 30px;
             font-family: Helvetica;
         }
 
-        .slideshow-container {
-            max-width: 90%;
-            height: 375px;
-            position: relative;
-            margin: auto;
-            margin-top: 40px;
+        #video {
+            margin-top: 50px;
+            margin-right: 100px;
+            margin-left: 180px;
         }
 
-        .mySlides {
-            display: none;
-        }
 
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
 
 
     </style>
@@ -224,15 +189,10 @@
 
 <div class="wrapper">
 
-    <!--Kiku Header-->
     <header>KIKU BISTRO
-
-        <!--Home Page button-->
         <div id="logo">
             <a href="index.html"><img src="kiku-logo.png" width="112" height="107"></a>
         </div>
-
-        <!--External links(bitesquad delivery,facebook,twitter,& flickr)-->
         <div class="order">
             <a href="https://www.facebook.com/kikubistrompls/?ref=page_internal"><img id=facebook src="Facebook_logo_36x36.svg.png" height="35" width="35"></a>
             <a href="https://twitter.com/KikuBistro"><img id=twitter src="twitter-logo.png" height="32" width="32"></a>
@@ -242,7 +202,7 @@
     </header>
 
 
-    <!--Navigation Menu Bar-->
+
     <aside>
         <nav>
             <a href="ABOUT.html">ABOUT</a>
@@ -271,60 +231,17 @@
 
         </div>
 
+
     </aside>
 
 
     <div class="inner-container">
-        <div class="slideshow-container">
 
-            <div class="mySlides">
-                <img src="kikuhome2.jpg" style="width:100%" height="375px">
-            </div>
-
-            <div class="mySlides">
-                <img src="kikuhome3.jpg" style="width:100%" height="375px">
-            </div>
-
-            <div class="mySlides">
-                <img src="kikuhome4.jpg" style="width:100%" height="375px">
-            </div>
-
-            <div class="mySlides">
-                <img src="kikuhome1.jpg" style="width:100%" height="375px">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <!--<h2>WELCOME TO KIKU BISTRO</h2>-->
-        <p id="para">Kiku Bistro is a locally-owned Asian restaurant featuring innovative sushi rolls and traditional stir-fries, teriyakis, and tempuras. We feature fare for the experienced sushi aficionado, as well as the guest seeking to explore new cuisine. Come visit us in the heart of Uptown for our daily Happy Hour and stay for dinner and our new and expanded dinner menu. We look forward to meeting you!</p>
+        <!--<h2>ABOUT KIKU BISTRO</h2>-->
+        <iframe id=video width="560" height="315" src="https://www.youtube.com/embed/yjCsNsSSx3I?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="para">Kiku Bistro offers a fun and lively atmosphere to enjoy creative, elegant sushi and other Asian fare. Head Chef Patrick Liu and his wife are small business owners dedicated to the dynamic Uptown Minneapolis neighborhood where they make their home. Check out the video above, and then wander over to the 'Specials' page to meet Kiku Bear, Pat's BFF who pops in every couple of months to get his sushi fix. Also, you can follow us on Facebook, Twitter, and Flickr by clicking on the icons at the top right. We hope to meet you soon!</p>
 
     </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-    </script>
 
 </div>
 

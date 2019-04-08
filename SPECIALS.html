@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KIKU BISTRO HOME</title>
+    <title>KIKU BISTRO'S SPECIALS</title>
 
     <link rel="shortcut icon" href="favicon1.ico"/>
 
@@ -45,7 +45,7 @@
 
         aside {
             width: 120px;
-            height: 780px;
+            height: 800px;
             background-color: #97191c;
             float: left;
             margin-left: 50px;
@@ -82,6 +82,7 @@
             margin: auto;
             margin-top: 30px;
             float: right;
+            font-family: Helvetica;
         }
 
         #head-hours {
@@ -100,6 +101,7 @@
             position: relative;
             float: right;
             margin-right: 25px;
+
         }
 
         #online {
@@ -162,60 +164,49 @@
             color: #97191c;
         }
 
-
-/*Start of specified page content*/
-
-        /*h2 {*/
-            /*font-family: Helvetica,bold,sans-serif;*/
-            /*font-size: 25px;*/
-            /*text-align: center;*/
-            /*margin: 30px;*/
-            /*margin-bottom: 10px;*/
-        /*}*/
-
-        #para {
-            margin-top: 30px;
+        #happypic {
             margin-right: 30px;
+            margin-left: 85px ;
+            margin-top: 30px;
+        }
+
+        #content {
+            margin-top: 20px;
             margin-left: 45px;
-            /*text-align: center;*/
-            font-size: 30px;
-            font-family: Helvetica;
-        }
-
-        .slideshow-container {
-            max-width: 90%;
-            height: 375px;
-            position: relative;
-            margin: auto;
-            margin-top: 40px;
-        }
-
-        .mySlides {
-            display: none;
-        }
-
-        .prev, .next {
-            cursor: pointer;
             position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
         }
 
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
+        #specials {
+            float: right;
+            position: relative;
+            margin-right: 55px;
+            margin-top: 20px;
         }
 
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+        h1 {
+            font-size: 30px;
+            font-family: Helvetica, sans-serif;
+            text-decoration: underline;
         }
+
+        .happy-base {
+            margin-top: 7px;
+        }
+
+        #items {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        #special-food {
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
 
 
     </style>
@@ -224,15 +215,10 @@
 
 <div class="wrapper">
 
-    <!--Kiku Header-->
     <header>KIKU BISTRO
-
-        <!--Home Page button-->
         <div id="logo">
             <a href="index.html"><img src="kiku-logo.png" width="112" height="107"></a>
         </div>
-
-        <!--External links(bitesquad delivery,facebook,twitter,& flickr)-->
         <div class="order">
             <a href="https://www.facebook.com/kikubistrompls/?ref=page_internal"><img id=facebook src="Facebook_logo_36x36.svg.png" height="35" width="35"></a>
             <a href="https://twitter.com/KikuBistro"><img id=twitter src="twitter-logo.png" height="32" width="32"></a>
@@ -242,7 +228,7 @@
     </header>
 
 
-    <!--Navigation Menu Bar-->
+
     <aside>
         <nav>
             <a href="ABOUT.html">ABOUT</a>
@@ -271,60 +257,48 @@
 
         </div>
 
+
     </aside>
 
 
     <div class="inner-container">
-        <div class="slideshow-container">
 
-            <div class="mySlides">
-                <img src="kikuhome2.jpg" style="width:100%" height="375px">
-            </div>
-
-            <div class="mySlides">
-                <img src="kikuhome3.jpg" style="width:100%" height="375px">
-            </div>
-
-            <div class="mySlides">
-                <img src="kikuhome4.jpg" style="width:100%" height="375px">
-            </div>
-
-            <div class="mySlides">
-                <img src="kikuhome1.jpg" style="width:100%" height="375px">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <img id=happypic src="kiku-happy4.jpg" width="750px" height="400px">
+        <div id="content">
+        <h1>Daily Happy Hour</h1>
+            <div class="happy-base">
+        <div>
+            <h2>Monday - Thursday</h2>
+            <p> 4:30p.m. - 7:30p.m. & 9:00p.m. - CLOSE</p>
+            <h2>Friday</h2>
+            <p> 3:00p.m. - 7:30p.m. & 9:00p.m. - CLOSE</p>
+            <h2>Saturday & Sunday - ALL DAY</h2>
         </div>
-
-        <!--<h2>WELCOME TO KIKU BISTRO</h2>-->
-        <p id="para">Kiku Bistro is a locally-owned Asian restaurant featuring innovative sushi rolls and traditional stir-fries, teriyakis, and tempuras. We feature fare for the experienced sushi aficionado, as well as the guest seeking to explore new cuisine. Come visit us in the heart of Uptown for our daily Happy Hour and stay for dinner and our new and expanded dinner menu. We look forward to meeting you!</p>
-
+        <div id="items">
+            <p>1/2 Price Select Appetizers</p>
+            <p>1/2 Price Bottles of Wine</p>
+            <p>$3.00 Taps/Sake/Wine $4.00 Signature Martinis</p>
+            <p>$4.00 Premium Liquor(Jack Daniels, Jim Beam, 2 Ginger)</p>
+            <p>$5.00 Signature Drinks & Shots</p>
+            <p>Large Selections of Chef's Special Rolls starting from $3.00</p>
+        </div>
+            </div>
+        </div>
+        <div id="specials">
+            <h1>Featured Specialty Roll</h1>
+            <div class="happy-base">
+            <h2>Tempura Shrimp Roll:</h2>
+                <div id="special-food">
+            <p>Cucumber</p>
+            <p>Oshiko</p>
+            <p>Crab</p>
+            <p>Avocado</p>
+            <p>Strawberry & Mango mix</p>
+            <p>Blueberry Sauce</p>
+                </div>
+        </div>
+        </div>
     </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-    </script>
 
 </div>
 

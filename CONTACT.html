@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KIKU BISTRO HOME</title>
+    <title>CONTACT KIKU BISTRO</title>
 
     <link rel="shortcut icon" href="favicon1.ico"/>
 
@@ -45,7 +45,7 @@
 
         aside {
             width: 120px;
-            height: 780px;
+            height: 800px;
             background-color: #97191c;
             float: left;
             margin-left: 50px;
@@ -100,6 +100,7 @@
             position: relative;
             float: right;
             margin-right: 25px;
+
         }
 
         #online {
@@ -162,59 +163,18 @@
             color: #97191c;
         }
 
-
-/*Start of specified page content*/
-
-        /*h2 {*/
-            /*font-family: Helvetica,bold,sans-serif;*/
-            /*font-size: 25px;*/
-            /*text-align: center;*/
-            /*margin: 30px;*/
-            /*margin-bottom: 10px;*/
-        /*}*/
-
-        #para {
-            margin-top: 30px;
-            margin-right: 30px;
+        #contact-container {
+            margin-top: 35px;
             margin-left: 45px;
-            /*text-align: center;*/
-            font-size: 30px;
             font-family: Helvetica;
         }
 
-        .slideshow-container {
-            max-width: 90%;
-            height: 375px;
-            position: relative;
-            margin: auto;
-            margin-top: 40px;
+        #hours-container {
+            margin-top: 5px;
         }
 
-        .mySlides {
-            display: none;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+        #location-container {
+            margin-top: 5px;
         }
 
 
@@ -224,15 +184,10 @@
 
 <div class="wrapper">
 
-    <!--Kiku Header-->
     <header>KIKU BISTRO
-
-        <!--Home Page button-->
         <div id="logo">
             <a href="index.html"><img src="kiku-logo.png" width="112" height="107"></a>
         </div>
-
-        <!--External links(bitesquad delivery,facebook,twitter,& flickr)-->
         <div class="order">
             <a href="https://www.facebook.com/kikubistrompls/?ref=page_internal"><img id=facebook src="Facebook_logo_36x36.svg.png" height="35" width="35"></a>
             <a href="https://twitter.com/KikuBistro"><img id=twitter src="twitter-logo.png" height="32" width="32"></a>
@@ -242,7 +197,7 @@
     </header>
 
 
-    <!--Navigation Menu Bar-->
+
     <aside>
         <nav>
             <a href="ABOUT.html">ABOUT</a>
@@ -271,60 +226,34 @@
 
         </div>
 
+
     </aside>
 
 
     <div class="inner-container">
-        <div class="slideshow-container">
 
-            <div class="mySlides">
-                <img src="kikuhome2.jpg" style="width:100%" height="375px">
-            </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.6294899220247!2d-93.30024628445965!3d44.95119947909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f6278022552819%3A0xc51475257758c75!2sKiku+Bistro!5e0!3m2!1sen!2sus!4v1554743843220!5m2!1sen!2sus" width="930" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-            <div class="mySlides">
-                <img src="kikuhome3.jpg" style="width:100%" height="375px">
-            </div>
+        <div id="contact-container">
+        <h1>Contact</h1>
+        <p>(612)-872-1778</p>
 
-            <div class="mySlides">
-                <img src="kikuhome4.jpg" style="width:100%" height="375px">
-            </div>
+        <div id="hours-container">
+            <h2>Hours: </h2>
+            <p>Mon - Thur: 4:30 p.m. - 12:30 a.m.</p>
+            <p>Fri - Sat: 3:00 p.m. - 1:30 a.m. </p>
+            <p>Sun: 3:00 p.m. - 12:30 a.m.</p>
+        </div>
+        <div id="location-container">
+            <h2>Location:</h2>
+            <p>
+                2819 Hennepin Ave. S. Minneapolis, Minnesota 55408
+            </p>
 
-            <div class="mySlides">
-                <img src="kikuhome1.jpg" style="width:100%" height="375px">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
         </div>
 
-        <!--<h2>WELCOME TO KIKU BISTRO</h2>-->
-        <p id="para">Kiku Bistro is a locally-owned Asian restaurant featuring innovative sushi rolls and traditional stir-fries, teriyakis, and tempuras. We feature fare for the experienced sushi aficionado, as well as the guest seeking to explore new cuisine. Come visit us in the heart of Uptown for our daily Happy Hour and stay for dinner and our new and expanded dinner menu. We look forward to meeting you!</p>
-
     </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-    </script>
 
 </div>
 
